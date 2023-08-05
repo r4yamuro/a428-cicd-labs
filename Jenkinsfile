@@ -8,7 +8,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'npm install --loglevel verbose'
+                sh 'npm install --loglevelg verbose'
+            }
+        }
+        stage('Test') {
+            steps {
+                sh './jenkins/scripts/test.sh'
             }
         }
     }
