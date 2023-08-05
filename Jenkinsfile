@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'npm install --loglevelg verbose'
+                sh 'npm install --loglevel verbose'
             }
         }
         stage('Test') {
